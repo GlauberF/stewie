@@ -1,0 +1,31 @@
+html {
+  height: 100%;
+  background-image: radial-gradient(at center, hsl(40, 30%, 85%), hsla(90, 30%, 70%, .3));
+  background-color: hsl(100, 100%, 30%);
+  animation: darken 1.5s .5s ease-in forwards;
+}
+@keyframes darken {
+  to {
+    background-color: hsl(0, 100%, 30%);
+  }
+}
+#svg {
+  display: block;
+  width: 330px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.bad-browser {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-family: Open sans, Helvetica-neue, sans-serif;
+  color: white;
+  text-align: right;
+  font-weight: bold;
+}
